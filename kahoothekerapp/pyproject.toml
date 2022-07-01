@@ -1,0 +1,52 @@
+[tool.briefcase]
+project_name = "Kahoot heker app"
+bundle = "com.velingo"
+version = "0.0.1"
+url = "https://velingo.com/kahoot/"
+license = "BSD license"
+author = 'zippy-boy'
+author_email = "zippy-boy@outlook.com"
+
+[tool.briefcase.app.kahoothekerapp]
+formal_name = "Kahoot heker app"
+description = "Kahoot hacker app"
+icon = "src/kahoothekerapp/resources/kahoothekerapp"
+sources = ['src/kahoothekerapp']
+requires = [
+]
+
+
+[tool.briefcase.app.kahoothekerapp.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev34',
+    'std-nslog~=1.0.0'
+]
+
+[tool.briefcase.app.kahoothekerapp.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev34',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.kahoothekerapp.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev34',
+]
+
+# Mobile deployments
+[tool.briefcase.app.kahoothekerapp.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev34',
+    'std-nslog~=1.0.0'
+]
+
+[tool.briefcase.app.kahoothekerapp.android]
+requires = [
+    'toga-android>=0.3.0.dev34'
+]
