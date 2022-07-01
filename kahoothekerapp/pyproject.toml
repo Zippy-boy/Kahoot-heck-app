@@ -13,6 +13,7 @@ description = "Kahoot hacker app"
 icon = "src/kahoothekerapp/resources/kahoothekerapp"
 sources = ['src/kahoothekerapp']
 requires = [
+    'requests'
 ]
 
 
